@@ -1,0 +1,103 @@
+include "104.mayu"
+
+keymap global
+
+# 追加のファンクションキーを認識する
+def key F14			=	0x65
+def key F15			=	0x66
+
+# 追加の修飾キーを認識する
+mod mod4			=	!!F14
+key R-*F14			=	&Ignore
+mod mod5			=	!!F15
+key R-*F15			=	&Ignore
+
+# スペースをシフト兼用にする ワンショットモディファイアSandS(Space and Shift)
+mod shift			+=	!!Space
+key R-*Space		=	 &Ignore
+
+# シフトをオルトに
+mod shift			-=	!LeftShift !E0RightShift
+mod alt				+=	!LeftShift !E0RightShift
+key R-*LShift		=	&Ignore
+key R-*E0RShift		=	&Ignore
+
+# ファンクションキー
+key C-*_1			=	~C-*F1
+key C-*_2			=	~C-*F2
+key C-*_3			=	~C-*F3
+key C-*_4			=	~C-*F4
+key C-*_5			=	~C-*F5
+key C-*_6			=	~C-*F6
+key C-*_7			=	~C-*F7
+key C-*_8			=	~C-*F8
+key C-*_9			=	~C-*F9
+key C-*_0			=	~C-*F10
+key C-*Minus		=	~C-*F11
+key C-*Equal		=	~C-*F12
+
+# システムワイドのキーバインド
+key C-m 			=	Enter
+key C-l				=	Escape
+key C-Semicolon		=	Backspace
+key C-Quote			=	Delete
+key M4-d 			=	Apps
+
+# IMEトグル
+key C-*Space		=	$ToggleIME
+
+# カーソル移動
+key M4-h			=	Left
+key M4-j			=	Down
+key M4-k			=	Up
+key M4-l			=	Right
+
+key C-M4-h			=	S-Left
+key C-M4-j			=	S-Down
+key C-M4-k			=	S-Up
+key C-M4-l			=	S-Right
+
+key A-M4-h			=	A-Left
+key A-M4-j			=	A-Down
+key A-M4-k			=	A-Up
+key A-M4-l			=	A-Right
+
+key M4-i			=	Home
+key M4-o			=	End
+
+key M4-m		=		PageDown
+key M4-Comma		=	PageUp
+
+# ウインドウ切り替え
+key M4-f			=	W-Tab
+key M5-g			=	A-Tab
+key M5-f			=	S-A-Tab
+key M5-q			=	A-F4
+
+# よく使うWindowsキーショートカット
+key M4-*Space		=	W-s			# Cortana
+key M5-*Space		=	C-Escape	# Start
+
+key M5-e			=	W-e
+key M5-r			=	W-r
+key M5-d			=	W-d
+key M5-t			=	W-t
+key M5-s			=	W-x
+
+key M5-z			=	W-Left
+key M5-x			=	W-Down
+key M5-c			=	W-Up
+key M5-v			=	W-Right
+
+key M5-j			=	C-W-Left
+key M5-k			=	C-W-Right
+
+key M5-_1			=	W-_1
+key M5-_2			=	W-_2
+key M5-_4			=	W-_4
+key M5-_5			=	W-_5
+key M5-_6			=	W-_6
+key M5-_7			=	W-_7
+key M5-_8			=	W-_8
+key M5-_9			=	W-_9
+key M5-_0			=	W-_0
