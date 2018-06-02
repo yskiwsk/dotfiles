@@ -24,12 +24,6 @@ set showbreak=\\ "行が折り返された場合の目印
 "set list
 "set listchars=tab:>-
 set listchars=tab:>-,trail:_,extends:>,precedes:<,nbsp:~
-"全角スペースも可視化する
-augroup highlightIdegraphicSpace
-  autocmd!
-  autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
-  autocmd VimEnter,WinEnter * match IdeographicSpace /　/
-augroup END
 
 "検索
 set ignorecase
