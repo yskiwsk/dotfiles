@@ -103,7 +103,6 @@ nnoremap <Leader><Space> :w<CR>
 "ファイルを閉じる（:q<Enter>よりずっと速い）
 nnoremap <Leader>q :q<CR>
 
-<<<<<<< HEAD
 "ファイル、タブ、ウインドウ
 nnoremap <Leader>o <C-^>
 nnoremap <Leader>e :enew<CR>
@@ -138,4 +137,3 @@ nnoremap <Leader>o <C-^>
 "次の行を画面の中心として再描画する
 nnoremap <Leader>n nzz
 nnoremap <Leader>m Nzz
->>>>>>> 31b11035beabf77551bf21d5865055f75e4240f9
