@@ -95,7 +95,7 @@ noremap \ ,
 inoremap <Leader>m <ESC>o
 inoremap <Leader>. <C-w>
 inoremap <Leader>, <C-u>
-inoremap 、ｍ <ESC>o<F15>
+inoremap 、ｍ <ESC>o
 
 "ファイルを保存する（:w<Enter>よりずっと速い）
 nnoremap <Leader><Space> :w<CR>
