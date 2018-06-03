@@ -38,7 +38,7 @@ set matchtime=3 "0.3秒で対のかっこからカーソルが戻ってくる
 "行番号
 set number
 
-"システムのクリップボードにコピー＆ペーストする
+"OSのクリップボードに対応する
 set clipboard=unnamed,autoselect
 
 "矢印キーを無効にする(将来、べつの機能にマップする予定)
@@ -114,23 +114,6 @@ nnoremap <Leader>c :close<CR>
 "次の行を画面の中心として再描画する
 nnoremap <Leader>n nzz
 nnoremap <Leader>N Nzz
-
-"Enterキーと左手によるCtrlショートカット
-nnoremap <CR>q <C-q>
-nnoremap <CR>w <C-w>
-nnoremap <CR>e <C-e>
-nnoremap <CR>r <C-r>
-nnoremap <CR>t <C-t>
-nnoremap <CR>a <C-a>
-nnoremap <CR>s <C-s>
-nnoremap <CR>d <C-d>
-nnoremap <CR>f <C-f>
-nnoremap <CR>g <C-g>
-nnoremap <CR>z <C-z>
-nnoremap <CR>x <C-x>
-nnoremap <CR>c <C-c>
-nnoremap <CR>v <C-v>
-nnoremap <CR>b <C-b>
 
 "次の行を画面の中心として再描画する
 nnoremap <Leader>n nzz
