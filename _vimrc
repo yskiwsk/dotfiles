@@ -1,5 +1,8 @@
 scriptencoding utf-8
 
+" いったんすべての設定を既定値に戻す
+set all&
+
 "ファイルの場所にカレントディレクトリ移動
 ":lcd %:h
 set autochdir
@@ -47,7 +50,10 @@ noremap <Right> <Nop>
 "その他
 set history=200
 
+
+"
 "キーバインド
+"
 
 "セミコロン/コロンを入れ替えると、コマンドモードに入りやすい
 nnoremap ; :
@@ -56,15 +62,16 @@ vnoremap ; :
 vnoremap : ;
 
 " jj または Ctrl-l を使うと挿入モードから抜けやすい
+" （既定ではEscape, Ctrl-[, Ctrl-c）
 inoremap <silent> jj <ESC>
 inoremap <silent> <C-l> <ESC>
 vnoremap <silent> <C-l> <ESC>
 cnoremap <silent> <C-l> <C-u><ESC>
 
-"挿入モードから抜けるつもりで間違って”っj”と入力しても大丈夫（Enterキーは必要）
+"挿入モードから抜けるつもりで、”っj”と入力してしまっても大丈夫（Enterキーは必要）
 inoremap <silent> っｊ <ESC>
 
-"ノーマルモードで日本語入力がオンのまま操作を始めても大丈夫(Enterキーは必要)
+"ノーマルモードで、日本語入力がオンのまま操作を始めてしまっても大丈夫(Enterキーは必要)
 nnoremap ｈ h
 nnoremap ｊ j
 nnoremap ｋ k
@@ -76,10 +83,11 @@ nnoremap う u
 nnoremap お o
 
 "検索結果ハイライトの消去
-nnoremap <C-j><C-j> :<C-u>nohlsearch<CR><Esc>
+nnoremap <C-n> :<C-u>nohlsearch<CR><Esc>
 
 "リーダーをコンマにすると押しやすい
 "本当はスペースキーにすると左右どちらの親指でも押せてさらによいのだが、SandSと相性が悪いので妥協する
+"let mapleader = " "
 let mapleader = ","
 noremap \ ,
 
@@ -95,6 +103,7 @@ nnoremap <Leader><Space> :w<CR>
 "ファイルを閉じる（:q<Enter>よりずっと速い）
 nnoremap <Leader>q :q<CR>
 
+<<<<<<< HEAD
 "ファイル、タブ、ウインドウ
 nnoremap <Leader>o <C-^>
 nnoremap <Leader>e :enew<CR>
@@ -122,3 +131,11 @@ nnoremap <CR>x <C-x>
 nnoremap <CR>c <C-c>
 nnoremap <CR>v <C-v>
 nnoremap <CR>b <C-b>
+=======
+"直前のファイルを開く
+nnoremap <Leader>o <C-^>
+
+"次の行を画面の中心として再描画する
+nnoremap <Leader>n nzz
+nnoremap <Leader>m Nzz
+>>>>>>> 31b11035beabf77551bf21d5865055f75e4240f9
