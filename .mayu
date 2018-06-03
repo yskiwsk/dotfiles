@@ -6,7 +6,7 @@ keymap global
 def key F14			=	0x65
 def key F15			=	0x66
 
-# 追加の修飾キーを認識する
+# 追加の修飾キーを定義する
 mod mod4			=	!!F14
 key R-*F14			=	&Ignore
 mod mod5			=	!!F15
@@ -16,7 +16,7 @@ key R-*F15			=	&Ignore
 mod shift			+=	!!Space
 key R-*Space		=	 &Ignore
 
-# シフトをオルトに
+# シフトをオルトにする
 mod shift			-=	!LeftShift !E0RightShift
 mod alt				+=	!LeftShift !E0RightShift
 key R-*LShift		=	&Ignore
@@ -78,11 +78,14 @@ key M5-q			=	A-F4
 key M4-*Space		=	W-s			# Cortana
 key M5-*Space		=	C-Escape	# Start
 
+key M5-a			=	W-Home
+key M5-s			=	W-x
+key M5-d			=	W-d
 key M5-e			=	W-e
 key M5-r			=	W-r
-key M5-d			=	W-d
 key M5-t			=	W-t
-key M5-s			=	W-x
+key M5-i			=	W-i
+key M5-p			=	W-p
 
 key M5-z			=	W-Left
 key M5-x			=	W-Down

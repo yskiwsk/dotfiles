@@ -83,16 +83,42 @@ nnoremap <C-j><C-j> :<C-u>nohlsearch<CR><Esc>
 let mapleader = ","
 noremap \ ,
 
+"挿入モードでよく使うキーバインド
+inoremap <Leader>m <ESC>o
+inoremap <Leader>. <C-w>
+inoremap <Leader>, <C-u>
+inoremap 、ｍ <ESC>o<F15>
+
 "ファイルを保存する（:w<Enter>よりずっと速い）
-nnoremap <Leader>w :w<CR>
+nnoremap <Leader><Space> :w<CR>
 
 "ファイルを閉じる（:q<Enter>よりずっと速い）
 nnoremap <Leader>q :q<CR>
 
-"直前のファイルを開く
-nnoremap.<Leader>. <C-^>
+"ファイル、タブ、ウインドウ
+nnoremap <Leader>o <C-^>
+nnoremap <Leader>e :enew<CR>
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>v :vsplit<CR>
+nnoremap <Leader>c :close<CR>
 
 "次の行を画面の中心として再描画する
 nnoremap <Leader>n nzz
 nnoremap <Leader>N Nzz
 
+"Enterキーと左手によるCtrlショートカット
+nnoremap <CR>q <C-q>
+nnoremap <CR>w <C-w>
+nnoremap <CR>e <C-e>
+nnoremap <CR>r <C-r>
+nnoremap <CR>t <C-t>
+nnoremap <CR>a <C-a>
+nnoremap <CR>s <C-s>
+nnoremap <CR>d <C-d>
+nnoremap <CR>f <C-f>
+nnoremap <CR>g <C-g>
+nnoremap <CR>z <C-z>
+nnoremap <CR>x <C-x>
+nnoremap <CR>c <C-c>
+nnoremap <CR>v <C-v>
+nnoremap <CR>b <C-b>
