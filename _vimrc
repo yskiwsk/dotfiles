@@ -104,7 +104,8 @@ nnoremap <Leader><Space> :w<CR>
 nnoremap <Leader>q :q<CR>
 
 "ファイル、タブ、ウインドウ
-nnoremap <Leader>o <C-^>
+nnoremap <Leader>o <C-^> "直前のファイルを開く
+nnoremap <Leader>w <C-w>w
 nnoremap <Leader>e :enew<CR>
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>v :vsplit<CR>
@@ -130,9 +131,6 @@ nnoremap <CR>x <C-x>
 nnoremap <CR>c <C-c>
 nnoremap <CR>v <C-v>
 nnoremap <CR>b <C-b>
-=======
-"直前のファイルを開く
-nnoremap <Leader>o <C-^>
 
 "次の行を画面の中心として再描画する
 nnoremap <Leader>n nzz
