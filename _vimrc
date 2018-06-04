@@ -87,7 +87,6 @@ inoremap <Leader>a <C-u>
 nnoremap <Leader>, :w<CR>
 nnoremap <Leader>. :wq<CR>
 
-
 "ファイルを閉じる（:q<Enter>よりずっと速い）
 nnoremap <Leader>q :q<CR>
 
