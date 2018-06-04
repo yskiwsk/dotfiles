@@ -63,24 +63,10 @@ vnoremap : ;
 
 " jj または Ctrl-l を使うと挿入モードから抜けやすい
 " （既定ではEscape, Ctrl-[, Ctrl-c）
-inoremap <silent> jj <ESC>
+"inoremap <silent> jj <ESC>
 inoremap <silent> <C-l> <ESC>
 vnoremap <silent> <C-l> <ESC>
 cnoremap <silent> <C-l> <C-u><ESC>
-
-"挿入モードから抜けるつもりで、”っj”と入力してしまっても大丈夫（Enterキーは必要）
-inoremap <silent> っｊ <ESC>
-
-"ノーマルモードで、日本語入力がオンのまま操作を始めてしまっても大丈夫(Enterキーは必要)
-nnoremap ｈ h
-nnoremap ｊ j
-nnoremap ｋ k
-nnoremap ｌ l
-
-nnoremap あ a
-nnoremap い i
-nnoremap う u
-nnoremap お o
 
 "検索結果ハイライトの消去
 nnoremap <C-n> :<C-u>nohlsearch<CR><Esc>
@@ -90,15 +76,17 @@ nnoremap <C-n> :<C-u>nohlsearch<CR><Esc>
 "let mapleader = " "
 let mapleader = ","
 noremap \ ,
-
+ 
 "挿入モードでよく使うキーバインド
 inoremap <Leader>m <ESC>o
-inoremap <Leader>. <C-w>
-inoremap <Leader>, <C-u>
-inoremap 、ｍ <ESC>o
+inoremap <Leader>d <C-w>
+inoremap <Leader>a <C-u>
 
 "ファイルを保存する（:w<Enter>よりずっと速い）
-nnoremap <Leader><Space> :w<CR>
+"nnoremap <Leader><Space> :w<CR> " SandSと相性が悪いため使わない
+nnoremap <Leader>, :w<CR>
+nnoremap <Leader>. :wq<CR>
+
 
 "ファイルを閉じる（:q<Enter>よりずっと速い）
 nnoremap <Leader>q :q<CR>

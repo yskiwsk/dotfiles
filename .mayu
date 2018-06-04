@@ -17,34 +17,43 @@ mod shift			+=	!!Space
 key R-*Space		=	 &Ignore
 
 # シフトをオルトにする
-mod shift			-=	!LeftShift !E0RightShift
-mod alt				+=	!LeftShift !E0RightShift
-key R-*LShift		=	&Ignore
-key R-*E0RShift		=	&Ignore
+# (レジストリで変更することにしたためコメントアウト)
+#mod shift			-=	!LeftShift !E0RightShift
+#mod alt				+=	!LeftShift !E0RightShift
+#key R-*LShift		=	&Ignore
+#key R-*E0RShift		=	&Ignore
 
-# ファンクションキー
-key C-*_1			=	~C-*F1
-key C-*_2			=	~C-*F2
-key C-*_3			=	~C-*F3
-key C-*_4			=	~C-*F4
-key C-*_5			=	~C-*F5
-key C-*_6			=	~C-*F6
-key C-*_7			=	~C-*F7
-key C-*_8			=	~C-*F8
-key C-*_9			=	~C-*F9
-key C-*_0			=	~C-*F10
-key C-*Minus		=	~C-*F11
-key C-*Equal		=	~C-*F12
+# ファンクションキー(Outlookのビュー切り替えショートカットと衝突するのでコメントアウト)
+#key C-*_1			=	~C-*F1
+#key C-*_2			=	~C-*F2
+#key C-*_3			=	~C-*F3
+#key C-*_4			=	~C-*F4
+#key C-*_5			=	~C-*F5
+#key C-*_6			=	~C-*F6
+#key C-*_7			=	~C-*F7
+#key C-*_8			=	~C-*F8
+#key C-*_9			=	~C-*F9
+#key C-*_0			=	~C-*F10
+#key C-*Minus		=	~C-*F11
+#key C-*Equal		=	~C-*F12
 
 # システムワイドのキーバインド
 key C-m 			=	Enter
 key C-l				=	Escape
 key C-Semicolon		=	Backspace
 key C-Quote			=	Delete
-key M4-d 			=	Apps
+key M4-f 			=	Apps
 
 # IMEトグル
-key C-*Space		=	$ToggleIME
+# (Excelショートカットを優先するためコメントアウト)
+#key C-*Space		=	$ToggleIME
+
+# Excelショートカット(スペースまたはシフトを使うもの。SandSを上書きするために、ここで個別に定義し直す。)
+# (行選択 Space + ShiftはSandSと共存できない。独立したShiftキーが別途必要。レジストリで左Ctrlを左シフトに割り当てる。)
+key C-Space			=	C-Space				# (列選択)
+key S-Space			=	S-Space				# (行選択)：日本語入力を一時的にオフにする必要あり。でなければ全角スペースになる。
+key C-S-Equal		=	C-S-$PLUS_SIGN		# (挿入)
+key C-S-Minus		=	C-S-$HYPHEN-MINUS	# (削除)
 
 # カーソル移動
 key M4-h			=	Left
@@ -64,12 +73,14 @@ key A-M4-l			=	A-Right
 
 key M4-i			=	Home
 key M4-o			=	End
+key C-M4-i			=	C-Home
+key C-M4-o			=	C-End
 
-key M4-m		=		PageDown
+key M4-m			=	PageDown
 key M4-Comma		=	PageUp
 
 # ウインドウ切り替え
-key M4-f			=	W-Tab
+key M5-Tab			=	W-Tab
 key M5-g			=	A-Tab
 key M5-f			=	S-A-Tab
 key M5-q			=	A-F4
