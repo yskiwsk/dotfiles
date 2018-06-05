@@ -17,10 +17,10 @@ set autochdir
 :set viminfo=
 
 "タブ
-set noexpandtab
+set expandtab
 set tabstop=4
 set shiftwidth=4
-set softtabstop:4
+set softtabstop=4
 
 "不可視文字
 set showbreak=\\ "行が折り返された場合の目印
@@ -63,7 +63,7 @@ vnoremap : ;
 
 " jj または Ctrl-l を使うと挿入モードから抜けやすい
 " （既定ではEscape, Ctrl-[, Ctrl-c）
-"inoremap <silent> jj <ESC>
+inoremap <silent> jj <ESC>
 inoremap <silent> <C-l> <ESC>
 vnoremap <silent> <C-l> <ESC>
 cnoremap <silent> <C-l> <C-u><ESC>
