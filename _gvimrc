@@ -2,6 +2,7 @@ scriptencoding utf-8
 
 " ビープ音と画面フラッシュを消す
 set visualbell t_vb=
+set listchars=tab:»-,trail:_,extends:»,precedes:«,nbsp:%,eol:↲
 
 "---------------------------------------------------------------------------
 " フォント設定:

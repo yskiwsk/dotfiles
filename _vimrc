@@ -28,7 +28,8 @@ set softtabstop=4
 "不可視文字
 set showbreak=\\ "行が折り返された場合の目印
 set list
-set listchars=tab:»-,trail:_,extends:»,precedes:«,nbsp:%,eol:↲
+"なぜか_gvimrcの方で設定するらしい
+"set listchars=tab:»-,trail:_,extends:»,precedes:«,nbsp:%,eol:↲
 
 "その他表示関係
 set number              " 行番号
