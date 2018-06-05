@@ -2,6 +2,7 @@ scriptencoding utf-8
 
 " ビープ音と画面フラッシュを消す
 set visualbell t_vb=
+set listchars=tab:»-,trail:_,extends:»,precedes:«,nbsp:%,eol:↲
 
 "---------------------------------------------------------------------------
 " フォント設定:
@@ -71,6 +72,10 @@ set nomousefocus
 set mousehide
 " ビジュアル選択(D&D他)を自動的にクリップボードへ (:help guioptions_a)
 set guioptions+=a
+
+" 右クリックでペースト
+"nnoremap <RightMouse> p
+inoremap <RightMouse> <C-r>+
 
 "---------------------------------------------------------------------------
 " メニューに関する設定:
