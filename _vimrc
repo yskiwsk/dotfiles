@@ -3,6 +3,9 @@ scriptencoding utf-8
 " いったんすべての設定を既定値に戻す
 set all&
 
+" ビープ音と画面フラッシュを消す
+set visualbell t_vb=
+
 "ファイルの場所にカレントディレクトリ移動
 ":lcd %:h
 set autochdir
