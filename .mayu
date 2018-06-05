@@ -51,7 +51,8 @@ key M4-f 			=	Apps
 # Excelショートカット(スペースまたはシフトを使うもの。SandSを上書きするために、ここで個別に定義し直す。)
 # (行選択 Space + ShiftはSandSと共存できない。独立したShiftキーが別途必要。レジストリで左Ctrlを左シフトに割り当てる。)
 key C-Space			=	C-Space				# (列選択)
-key S-Space			=	S-Space				# (行選択)：日本語入力を一時的にオフにする必要あり。でなければ全角スペースになる。
+# この設定はなくてもExcelで業選択できるようだ。しかも、この設定を有効にすると，ブラウザの画面スクロールの動作が逆になってし舞う。なのでコメントアウト。
+#key S-Space			=	S-Space			# (行選択)：日本語入力を一時的にオフにする必要あり。でなければ全角スペースになる。
 key C-S-Equal		=	C-S-$PLUS_SIGN		# (挿入)
 key C-S-Minus		=	C-S-$HYPHEN-MINUS	# (削除)
 
@@ -108,6 +109,7 @@ key M5-k			=	C-W-Right
 
 key M5-_1			=	W-_1
 key M5-_2			=	W-_2
+key M5-_3			=	W-_3
 key M5-_4			=	W-_4
 key M5-_5			=	W-_5
 key M5-_6			=	W-_6
