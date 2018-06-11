@@ -35,7 +35,7 @@ endif
 " ウインドウの幅
 set columns=120
 " ウインドウの高さ
-set lines=60
+set lines=40
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
 " 画面を黒地に白にする
@@ -87,9 +87,10 @@ inoremap <RightMouse> <C-r>+
 " いう問題が生じ得る。しかしあまりにレアなケースであると考えられるので無視す
 " る。
 "
-if &guioptions =~# 'M'
-  let &guioptions = substitute(&guioptions, '[mT]', '', 'g')
-endif
+"if &guioptions =~# 'M'
+"  let &guioptions = substitute(&guioptions, '[mT]', '', 'g')
+"endif
+set guioptions-=T "ツールバー非表示
 
 "---------------------------------------------------------------------------
 " その他、見栄えに関する設定:

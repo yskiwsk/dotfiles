@@ -40,7 +40,8 @@ set colorcolumn=80      " その代わり80文字目にラインを入れる
 
 "検索
 set ignorecase
-set iskeyword-=_ "アンダースコアも単語の境界として扱う
+set smartcase
+"set iskeyword-=_ "アンダースコアも単語の境界として扱う
 set showmatch
 set matchtime=3 "0.3秒で対のかっこからカーソルが戻ってくる
 "set hlsearch "これはなぜか_gvimrcで設定するらしい
@@ -72,6 +73,10 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+"ファンクションキー(英数・かなとして使用)を無効にする
+inoremap <F14> <NOP>
+inoremap <F15> <NOP>
+
 "
 "キーバインド
 "
@@ -81,6 +86,8 @@ nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+
+nnoremap q; q:
 
 " jj または Ctrl-l を使うと挿入モードから抜けやすい
 " （既定ではEscape, Ctrl-[, Ctrl-c）
@@ -121,17 +128,17 @@ vnoremap <Leader>a <C-u>
 
 "ファイルを保存する（:w<Enter>よりずっと速い）
 "nnoremap <Leader><Space> :w<CR> " SandSと相性が悪いため使わない
-nnoremap <Leader>m :w<CR>
-nnoremap <Leader>, :x<CR>
-
-"ファイルを閉じる（:q<Enter>よりずっと速い）
-nnoremap <Leader>q :q<CR>
+nnoremap <Leader>, :w<CR>
 
 "ファイル、タブ、ウインドウ
-nnoremap <Leader>o <C-^> "直前のファイルを開く
 nnoremap <Leader>w <C-w>w
 nnoremap <Leader>e :enew<CR>
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>v :vsplit<CR>
 nnoremap <Leader>c :close<CR>
+nnoremap <Leader>b :bn<CR>
+
+"プログラミング
+nnoremap <Leader>r :!ruby %<CR>
+nnoremap <Leader>y :!python %<CR>
 
