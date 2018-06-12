@@ -120,6 +120,12 @@ vnoremap <Tab> %
 let mapleader = ","
 noremap \ ,
  
+"ペースト
+inoremap <Leader>p <C-r>+
+
+" 右クリックでペースト
+inoremap <RightMouse> <C-r>+
+
 "挿入モードとコマンドモードでよく使うキーバインド
 inoremap <Leader>d <C-w>
 inoremap <Leader>a <C-u>
