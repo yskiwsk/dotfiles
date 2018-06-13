@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = yskiwsk
+email = 39807786+yskiwsk@users.noreply.github.com
+[gui]
+	recentrepo = C:/Users/IWASAKIY2/Documents/GitHub/dotfiles
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
