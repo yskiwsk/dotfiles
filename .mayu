@@ -23,6 +23,21 @@ key R-*Space		=	 &Ignore
 #key R-*LShift		=	&Ignore
 #key R-*E0RShift		=	&Ignore
 
+# エンターキーを右コントロールにする
+mod ctrl				+= !!Enter
+key R-*Enter			=	&Ignore
+
+# システムワイドのキーバインド
+key C-m 			=	Enter
+key C-l				=	Escape
+key C-Semicolon		=	Backspace
+key C-Quote			=	Delete
+key M4-f 			=	Apps
+
+# IMEトグル
+# (Excelショートカットを優先するためコメントアウト)
+#key C-*Space		=	$ToggleIME
+
 # ファンクションキー(Outlookのビュー切り替えショートカットと衝突するのでコメントアウト)
 #key C-*_1			=	~C-*F1
 #key C-*_2			=	~C-*F2
@@ -36,17 +51,6 @@ key R-*Space		=	 &Ignore
 #key C-*_0			=	~C-*F10
 #key C-*Minus		=	~C-*F11
 #key C-*Equal		=	~C-*F12
-
-# システムワイドのキーバインド
-key C-m 			=	Enter
-key C-l				=	Escape
-key C-Semicolon		=	Backspace
-key C-Quote			=	Delete
-key M4-f 			=	Apps
-
-# IMEトグル
-# (Excelショートカットを優先するためコメントアウト)
-#key C-*Space		=	$ToggleIME
 
 # Excelショートカット(スペースまたはシフトを使うもの。SandSを上書きするために、ここで個別に定義し直す。)
 # (行選択 Space + ShiftはSandSと共存できない。独立したShiftキーが別途必要。レジストリで左Ctrlを左シフトに割り当てる。)
@@ -117,3 +121,8 @@ key M5-_7			=	W-_7
 key M5-_8			=	W-_8
 key M5-_9			=	W-_9
 key M5-_0			=	W-_0
+key M4-_6			=	W-_6
+key M4-_7			=	W-_7
+key M4-_8			=	W-_8
+key M4-_9			=	W-_9
+key M4-_0			=	W-_0
