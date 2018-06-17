@@ -28,12 +28,12 @@ mod ctrl			+= !!Enter
 key R-*Enter		=	&Ignore
 
 # システムワイドのキーバインド
+key C-j 			=	Enter
 key C-m 			=	Enter
 key C-l				=	Escape
 key C-Semicolon		=	Backspace
 key C-Quote			=	Delete
 key M4-f 			=	Apps
-
 # IMEトグル
 # (Excelショートカットを優先するためコメントアウト)
 #key C-*Space		=	$ToggleIME
@@ -66,15 +66,13 @@ key M4-j			=	Down
 key M4-k			=	Up
 key M4-l			=	Right
 
-key C-M4-h			=	S-Left
+key C-M4-h			=	S-Left		# Exploreerで複数ファイル選択
 key C-M4-j			=	S-Down
 key C-M4-k			=	S-Up
 key C-M4-l			=	S-Right
 
-key A-M4-h			=	A-Left
-key A-M4-j			=	A-Down
-key A-M4-k			=	A-Up
-key A-M4-l			=	A-Right
+key M4-S-Comma		=	A-Left		# Chromeの戻る
+key M4-S-Fullstop	=	A-Right		# Chromeの進む
 
 key M4-i			=	Home
 key M4-o			=	End
@@ -109,8 +107,8 @@ key M5-x			=	W-Down
 key M5-c			=	W-Up
 key M5-v			=	W-Right
 
-key M5-j			=	C-W-Left
-key M5-k			=	C-W-Right
+key M5-Comma		=	C-W-Left
+key M5-Fullstop		=	C-W-Right
 
 key M5-_1			=	W-_1
 key M5-_2			=	W-_2
