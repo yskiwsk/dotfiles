@@ -23,9 +23,9 @@ key R-*Space		=	 &Ignore
 #key R-*LShift		=	&Ignore
 #key R-*E0RShift		=	&Ignore
 
-# エンターキーを右コントロールにする
-mod ctrl				+= !!Enter
-key R-*Enter			=	&Ignore
+# エンターキーを右コントロール兼用にする ワンショットモディファイア
+mod ctrl			+= !!Enter
+key R-*Enter		=	&Ignore
 
 # システムワイドのキーバインド
 key C-m 			=	Enter
@@ -94,7 +94,8 @@ key M5-q			=	A-F4
 key M4-*Space		=	W-s			# Cortana
 key M5-*Space		=	C-Escape	# Start
 
-key M5-a			=	W-Home
+key M5-w			=	W-Home
+key M5-a			=	W-a
 key M5-s			=	W-x
 key M5-d			=	W-d
 key M5-e			=	W-e
