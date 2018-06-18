@@ -135,6 +135,9 @@ vnoremap <Leader>a <C-u>
 "ファイルを保存する（:w<Enter>よりずっと速い）
 "nnoremap <Leader><Space> :w<CR> " SandSと相性が悪いため使わない
 nnoremap <Leader>, :w<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :x<CR>
 
 "ファイル、タブ、ウインドウ
 nnoremap <Leader>w <C-w>w

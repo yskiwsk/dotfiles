@@ -92,7 +92,8 @@ key M5-q			=	A-F4
 key M4-*Space		=	W-s			# Cortana
 key M5-*Space		=	C-Escape	# Start
 
-key M5-w			=	W-Home
+key M5-j			=	W-Home
+key M5-w			=	W-w
 key M5-a			=	W-a
 key M5-s			=	W-x
 key M5-d			=	W-d
