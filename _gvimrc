@@ -36,11 +36,14 @@ endif
 set columns=120
 " ウインドウの高さ
 set lines=40
-" コマンドラインの高さ(GUI使用時)
+" コマンドラインの高さ
 set cmdheight=2
 " 画面を黒地に白にする
-colorscheme evening " (GUI使用時)
-highlight lineNr guifg=darkgrey
+colorscheme pencil
+set background=dark
+"colorscheme wombat
+"colorscheme evening
+"highlight LineNr guifg=darkgrey
 
 "---------------------------------------------------------------------------
 " 日本語入力に関する設定:
