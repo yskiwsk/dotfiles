@@ -39,6 +39,9 @@ set textwidth=0         " 自動的に改行が入るのを無効化
 set colorcolumn=80      " その代わり80文字目にラインを入れる
 highlight LineNr ctermfg=darkgrey
 
+" バッファを閉じずにバックグラウンドに回す
+set hidden
+
 "検索
 set ignorecase
 set smartcase
@@ -56,9 +59,9 @@ set history=200
 " 対応括弧に'<'と'>'のペアを追加
 set matchpairs& matchpairs+=<:>
 
-" TABでペアの括弧にジャンプ
-nnoremap <Tab> %
-vnoremap <Tab> %
+" TABでペアの括弧にジャンプ(Ctrl-iでジャンプ戻れなくなるのでやめた)
+"nnoremap <Tab> %
+"vnoremap <Tab> %
 
 " バックスペースでなんでも消せるようにする
 set backspace=indent,eol,start
@@ -111,9 +114,9 @@ nnoremap g# g#zz
 " vを二回で行末まで選択
 vnoremap v $h
 
-" TABにて対応ペアにジャンプ
-nnoremap <Tab> %
-vnoremap <Tab> %
+" TABにて対応ペアにジャンプ (Ctrol-iでジャンプが戻れなくなるのでやめた)
+"nnoremap <Tab> %
+"vnoremap <Tab> %
 
 "リーダーをコンマにすると押しやすい
 "本当はスペースキーにすると左右どちらの親指でも押せてさらによいのだが、SandSと相性が悪いので妥協する
