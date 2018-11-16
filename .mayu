@@ -86,8 +86,8 @@ key M4-Comma		=	PageUp
 
 # ウインドウ切り替え
 key M5-Tab			=	W-Tab
-key M5-g			=	A-Tab
-key M5-f			=	S-A-Tab
+key M5-g			=	S-A-Tab
+key M5-f			=	A-Tab
 key M5-q			=	A-F4
 
 # よく使うWindowsキーショートカット
