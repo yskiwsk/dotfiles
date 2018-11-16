@@ -71,13 +71,15 @@ key C-M4-j			=	S-Down
 key C-M4-k			=	S-Up
 key C-M4-l			=	S-Right
 
-key M4-S-Comma		=	A-Left		# Chromeの戻る
-key M4-S-Fullstop	=	A-Right		# Chromeの進む
+#key M4-S-Comma		=	A-Left		# Chromeの戻る
+#key M4-S-Fullstop	=	A-Right		# Chromeの進む
+key M4-o			=	A-Left		# Chromeの戻る
+key M4-p			=	A-Right		# Chromeの進む
 
 key M4-i			=	Home
-key M4-o			=	End
+key M4-u			=	End
 key C-M4-i			=	C-Home
-key C-M4-o			=	C-End
+key C-M4-u			=	C-End
 
 key M4-m			=	PageDown
 key M4-Comma		=	PageUp
@@ -128,3 +130,4 @@ key M4-_7			=	W-_7
 key M4-_8			=	W-_8
 key M4-_9			=	W-_9
 key M4-_0			=	W-_0
+
