@@ -101,6 +101,7 @@ set guioptions-=T "ツールバー非表示
 "
 " 検索文字列ハイライト(_vimrcではなく_gvimrcで設定する必要がある)
 set hlsearch
+highlight Search guibg='Purple' guifg='NONE' 
 "set nowrap
 
 "---------------------------------------------------------------------------

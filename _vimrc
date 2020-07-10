@@ -86,10 +86,10 @@ inoremap <F15> <NOP>
 "
 
 "セミコロン/コロンを入れ替えると、コマンドモードに入りやすい
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
+"nnoremap ; :
+"nnoremap : ;
+"vnoremap ; :
+"vnoremap : ;
 
 nnoremap q; q:
 

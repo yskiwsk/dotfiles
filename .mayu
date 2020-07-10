@@ -3,131 +3,74 @@ include "104.mayu"
 keymap global
 
 # 追加のファンクションキーを認識する
-def key F14			=	0x65
-def key F15			=	0x66
+def key F21			=	0x6C
+def key F22			=	0x6D
 
 # 追加の修飾キーを定義する
-mod mod4			=	!!F14
-key R-*F14			=	&Ignore
-mod mod5			=	!!F15
-key R-*F15			=	&Ignore
-
-# スペースをシフト兼用にする ワンショットモディファイアSandS(Space and Shift)
-mod shift			+=	!!Space
-key R-*Space		=	 &Ignore
-
-# シフトをオルトにする
-# (レジストリで変更することにしたためコメントアウト)
-#mod shift			-=	!LeftShift !E0RightShift
-#mod alt				+=	!LeftShift !E0RightShift
-#key R-*LShift		=	&Ignore
-#key R-*E0RShift		=	&Ignore
-
-# エンターキーを右コントロール兼用にする ワンショットモディファイア
-mod ctrl			+= !!Enter
-key R-*Enter		=	&Ignore
+mod mod1			=	!!F21
+key R-*F21			=	&Ignore
+mod mod2			=	!!F22
+key R-*F22			=	&Ignore
 
 # システムワイドのキーバインド
-key C-j 			=	Enter
-key C-m 			=	Enter
 key C-l				=	Escape
-key C-Semicolon		=	Backspace
-key C-Quote			=	Delete
-key M4-f 			=	Apps
-# IMEトグル
-# (Excelショートカットを優先するためコメントアウト)
-#key C-*Space		=	$ToggleIME
-
-# ファンクションキー(Outlookのビュー切り替えショートカットと衝突するのでコメントアウト)
-#key C-*_1			=	~C-*F1
-#key C-*_2			=	~C-*F2
-#key C-*_3			=	~C-*F3
-#key C-*_4			=	~C-*F4
-#key C-*_5			=	~C-*F5
-#key C-*_6			=	~C-*F6
-#key C-*_7			=	~C-*F7
-#key C-*_8			=	~C-*F8
-#key C-*_9			=	~C-*F9
-#key C-*_0			=	~C-*F10
-#key C-*Minus		=	~C-*F11
-#key C-*Equal		=	~C-*F12
-
-# Excelショートカット(スペースまたはシフトを使うもの。SandSを上書きするために、ここで個別に定義し直す。)
-# (行選択 Space + ShiftはSandSと共存できない。独立したShiftキーが別途必要。レジストリで左Ctrlを左シフトに割り当てる。)
-key C-Space			=	C-Space				# (列選択)
-# この設定はなくてもExcelで業選択できるようだ。しかも、この設定を有効にすると，ブラウザの画面スクロールの動作が逆になってし舞う。なのでコメントアウト。
-#key S-Space			=	S-Space			# (行選択)：日本語入力を一時的にオフにする必要あり。でなければ全角スペースになる。
-key C-S-Equal		=	C-S-$PLUS_SIGN		# (挿入)
-key C-S-Minus		=	C-S-$HYPHEN-MINUS	# (削除)
+key C-Quote			=	Apps
 
 # カーソル移動
-key M4-h			=	Left
-key M4-j			=	Down
-key M4-k			=	Up
-key M4-l			=	Right
+key M1-h			=	Left
+key M1-j			=	Down
+key M1-k			=	Up
+key M1-l			=	Right
 
-key C-M4-h			=	S-Left		# Exploreerで複数ファイル選択
-key C-M4-j			=	S-Down
-key C-M4-k			=	S-Up
-key C-M4-l			=	S-Right
+key M1-u			=	Home
+key M1-i			=	End
 
-#key M4-S-Comma		=	A-Left		# Chromeの戻る
-#key M4-S-Fullstop	=	A-Right		# Chromeの進む
-key M4-o			=	A-Left		# Chromeの戻る
-key M4-p			=	A-Right		# Chromeの進む
-
-key M4-i			=	Home
-key M4-u			=	End
-key C-M4-i			=	C-Home
-key C-M4-u			=	C-End
-
-key M4-m			=	PageDown
-key M4-Comma		=	PageUp
+key M1-m			=	PageDown
+key M1-Comma		=	PageUp
 
 # ウインドウ切り替え
-key M5-Tab			=	W-Tab
-key M5-g			=	S-A-Tab
-key M5-f			=	A-Tab
-key M5-q			=	A-F4
+key M2-Tab			=	W-Tab
+key M1-HyphenMinus	=	C-W-Left
+key M1-Equal		=	C-W-Right
+key M2-g			=	S-A-Tab
+key M2-f			=	A-Tab
+key M2-q			=	A-F4
+key M1-o			=	W-Left
+key M1-p			=	W-Right
+key M1-LeftSquareBracket	=	W-Up
+
+# コピペ系定番ショートカット Macのキーバインドと合わせる
+key M2-a			=	C-a
+key M2-z			=	C-z
+key M2-x			=	C-x
+key M2-c			=	C-c
+key M2-v			=	C-v
 
 # よく使うWindowsキーショートカット
-key M4-*Space		=	W-s			# Cortana
-key M5-*Space		=	C-Escape	# Start
+key M1-*Space		=	W-s			# Cortana
+key M2-*Space		=	C-Escape	# Start
 
-key M5-j			=	W-Home
-key M5-w			=	W-w
-key M5-a			=	W-a
-key M5-s			=	W-x
-key M5-d			=	W-d
-key M5-e			=	W-e
-key M5-r			=	W-r
-key M5-t			=	W-t
-key M5-i			=	W-i
-key M5-k			=	W-k
-key M5-l			=	W-l
-key M5-p			=	W-p
+key M2-s			=	W-x
+key M2-d			=	W-d
+key M2-w			=	W-w
+key M2-e			=	W-e
+key M2-r			=	W-r
+key M2-t			=	W-t
+key M2-b			=	W-b
 
-key M5-z			=	W-Left
-key M5-x			=	W-Down
-key M5-c			=	W-Up
-key M5-v			=	W-Right
-
-key M5-Comma		=	C-W-Left
-key M5-Fullstop		=	C-W-Right
-
-key M5-_1			=	W-_1
-key M5-_2			=	W-_2
-key M5-_3			=	W-_3
-key M5-_4			=	W-_4
-key M5-_5			=	W-_5
-key M5-_6			=	W-_6
-key M5-_7			=	W-_7
-key M5-_8			=	W-_8
-key M5-_9			=	W-_9
-key M5-_0			=	W-_0
-key M4-_6			=	W-_6
-key M4-_7			=	W-_7
-key M4-_8			=	W-_8
-key M4-_9			=	W-_9
-key M4-_0			=	W-_0
+key M2-_1			=	W-_1
+key M2-_2			=	W-_2
+key M2-_3			=	W-_3
+key M2-_4			=	W-_4
+key M2-_5			=	W-_5
+key M2-_6			=	W-_6
+key M2-_7			=	W-_7
+key M2-_8			=	W-_8
+key M2-_9			=	W-_9
+key M2-_0			=	W-_0
+key M1-_6			=	W-_6
+key M1-_7			=	W-_7
+key M1-_8			=	W-_8
+key M1-_9			=	W-_9
+key M1-_0			=	W-_0
 
